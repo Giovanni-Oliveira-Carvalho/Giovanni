@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <title>Atividade RV</title>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <!-- Repositório dos elementos -->
+            <img id="sky" src="../Aula_VR/assets/img/pexels-sookie-zhang-1605060802-27907508.jpg">
+            <img id="sphere" src="../Aula_VR/assets/img/Captura de tela 2025-06-16 090928.png">
+            <img id="sphere2" src="../Aula_VR/assets/img/Captura de tela 2025-06-16 091439.png">
+        </a-assets>
+
+        <a-sphere src="#sphere" position="-4 0 1" color="" radius="2"></a-sphere>
+        <a-sphere src="#sphere2" position="40 0 2" color="" radius="8"></a-sphere>
+        <a-sky src="#sky" color="white"></a-sky>
+
+        <a-camera position="0 1.6 0">
+            <a-cursor></a-cursor>
+        </a-camera>
+    </a-scene>
+</body>
+</html>
